@@ -40,7 +40,8 @@ export async function POST(request) {
 }
 
 // CORS Support (For non-Next.js clients)
-const allowedOrigin = 'https://create-portfolio-zeta.vercel.app/api/contact';
+const allowedOrigin = 'https://create-portfolio-zeta.vercel.app';
+
 export async function OPTIONS() {
   return new Response(null, {
     status: 204,
